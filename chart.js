@@ -86,6 +86,7 @@ const configLineChart = {
                 tension: 0.4 // smooth lines
             },
         },
+        responsive: true,
     },
 };
 

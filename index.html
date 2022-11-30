@@ -28,7 +28,7 @@
         }
     </script>
 </head>
-<body class="bg-backColor h-screen ">
+<body class="bg-backColor h-screen">
     <!-- sidebar-->
     <div class="hidden md:fixed md:inset-y-0 md:flex md:w-64 md:flex-col">
         <div class="flex flex-grow flex-col overflow-y-auto pt-5 my-12">
@@ -92,7 +92,7 @@
     </div>
 
     <!--main -->
-    <div class="flex flex-1 flex-col md:pl-60">
+    <div class="flex flex-1 flex-col md:pl-60 ">
         <main class="bg-white h-full my-5 p-8 mx-4 rounded-[50px]">
             <!--HEADER -->
             <div class="flex h-16 justify-between">
@@ -111,7 +111,7 @@
                             </svg>
                         </div>
                         <input id="search" name="search"
-                               class="w-full text-sm rounded-tl-[15px] rounded-br-[15px] rounded-bl rounded-tr bg-backLight text-textSecondary py-3 pr-24 pl-5 leading-5 placeholder-gray-500 focus:border-indigo-500 focus:placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+                               class="w-full text-sm rounded-tl-[15px] border-none rounded-br-[15px] rounded-bl rounded-tr bg-backLight text-textSecondary py-3 pr-24 pl-5 leading-5 placeholder-gray-500 focus:border-indigo-500 focus:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                                placeholder="Search for products..." type="search">
                     </div>
                     <div class="ml-4 flex items-center">
@@ -143,8 +143,8 @@
 
             <div class="flex flex justify-between flex-col xl:flex-row">
                 <div class="max-w-7xl flex-col lg:flex-row ">
-                    <div class="mt-4 flex gap-5 justify-center xl:justify-start">
-                        <div class="flex gap-x-3 py-8 px-6 rounded-tl-[40px] rounded-br-[40px] rounded-bl-lg rounded-tr-lg bg-backOrder xl:w-64 w-96">
+                    <div class="mt-4 lg:flex grid gap-5 justify-center xl:justify-start">
+                        <div class="flex justify-center gap-x-3 py-8 lg:px-6 rounded-tl-[40px] rounded-br-[40px] rounded-bl-lg rounded-tr-lg bg-backOrder">
                             <span class="flex-shrink-0 rounded-tl-[15px] rounded-br-[15px] rounded-bl rounded-tr bg-white p-4 text-gray-400">
                                 <img class="w-5" src="dark-orders.png" alt="order-icon">
                             </span>
@@ -160,7 +160,7 @@
                                 </span>
                             </span>
                         </div>
-                        <div class="flex gap-x-3 p-8 rounded-tl rounded-br rounded-bl-[40px] rounded-tr-[40px] bg-profit w-[350px]">
+                        <div class="flex gap-x-3 p-8 rounded-tl rounded-br rounded-bl-[40px] rounded-tr-[40px] bg-profit ">
                             <span class="flex-shrink-0 rounded-tl-[15px] rounded-br-[15px] rounded-bl rounded-tr bg-white p-4 text-gray-400">
                                 <img class="w-5" src="profit.png" alt="order-icon">
                             </span>
@@ -183,18 +183,11 @@
                             <p class="font-bold text-textColorp">Sales statistics</p>
                             <div class="relative inline-block text-left">
                                 <div>
-                                    <button type="button"
-                                            class="inline-flex w-full justify-center rounded-tl-[15px] rounded-br-[15px] rounded-bl-[5px] rounded-tr-[5px] border border-light bg-white px-4 py-2 text-sm font-medium text-textSecondary"
-                                            id="menu-button" aria-expanded="true" aria-haspopup="true">
-                                        Montly
-                                        <!-- Heroicon name: mini/chevron-down -->
-                                        <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd"
-                                                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                                  clip-rule="evenodd"/>
-                                        </svg>
-                                    </button>
+                                    <select id="time" name="time" class="inline-flex w-full justify-start rounded-tl-[15px] rounded-br-[15px] rounded-bl-[5px] rounded-tr-[5px] border border-light bg-white px-6 py-2 text-sm font-medium text-textSecondary">
+                                        <option>Daily</option>
+                                        <option selected>Montly</option>
+                                        <option>Years</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
