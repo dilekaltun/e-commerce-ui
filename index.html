@@ -97,7 +97,7 @@
             <!--HEADER -->
             <div class="flex h-16 justify-between">
                 <div class="flex px-2 lg:px-0 items-center">
-                    <p class="text-textColorp text-3xl font-light">Welcome, <span
+                    <p class="text-textColorp lg:text-3xl text-xl font-light">Welcome, <span
                             class="font-bold">Damian</span></p>
                 </div>
 
@@ -135,6 +135,40 @@
                                          alt="">
                                 </button>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative text-left flex flex-col lg:hidden mt-3">
+                    <div class="flex gap-x-3">
+                        <div class="relative ml-4 flex-shrink-0">
+                            <div>
+                                <button type="button"
+                                        class="flex bg-white text-sm rounded-tl-[15px] rounded-br-[15px] rounded-bl-[5px] rounded-tr-[5px] focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                        aria-expanded="false" aria-haspopup="true">
+                                    <img class="rounded-tl-[15px] rounded-br-[15px] rounded-bl-[5px] rounded-tr-[5px] w-11 h-11"
+                                         src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                         alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <button type="button" onclick="myFunction()" class="dropbtn inline-flex w-full justify-center items-center rounded-tl-[15px] rounded-br-[15px] rounded-bl-[5px] rounded-tr-[5px] border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                            <svg class="h-5 w-5" viewBox="0 0 24 24"><path fill="none" stroke="#5840bb" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16M4 6h16M4 18h16"/></svg>
+                        </button>
+                    </div>
+                    <div id="myDropdown" class="dropdown-content hidden absolute right-0 z-10 mt-12 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                        <div class="px-4 py-3" role="none">
+                            <p class="text-sm" role="none">Signed in as</p>
+                            <p class="truncate text-sm font-medium text-gray-900" role="none">damian@example.com</p>
+                        </div>
+                        <div class="py-1" role="none">
+                            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-profit" role="menuitem" tabindex="-1" id="menu-item-0">Dashboard</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-profit" role="menuitem" tabindex="-1" id="menu-item-1">Orders</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-profit" role="menuitem" tabindex="-1" id="menu-item-2">Products</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-profit" role="menuitem" tabindex="-1" id="menu-item-3">Marketing</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-profit" role="menuitem" tabindex="-1" id="menu-item-4">Rates</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-profit" role="menuitem" tabindex="-1" id="menu-item-5">Reports</a>
                         </div>
                     </div>
                 </div>
@@ -340,5 +374,6 @@
 
     <script src="chart.js"></script>
     <script src="chartTwo.js"></script>
+    <script src="dropdown_menu.js"></script>
 </body>
 </html>
